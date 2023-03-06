@@ -12,7 +12,7 @@ public class C05_SoftAsserts {
     public void C05_SoftAssert() {
     }
 
-    @Test
+    @Test (groups = "smoke")
     public void amazonTesti() {
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
         String expectedIcerik = "amazon";
